@@ -4,7 +4,7 @@ mod types;
 use reqwest::header::{HeaderMap, HeaderName, HeaderValue};
 
 pub use error::*;
-pub use json_api::*;
+pub use json_api_client::*;
 pub use types::*;
 
 const API_URL: &str = "https://public.chainalysis.com/api/v1/";

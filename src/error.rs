@@ -6,7 +6,7 @@ pub enum Error {
     ApiError(#[from] ErrorKind),
 
     #[error(transparent)]
-    ClientError(#[from] json_api::error::Error),
+    ClientError(#[from] json_api_client::error::Error),
 }
 
 #[derive(Error, Debug)]
