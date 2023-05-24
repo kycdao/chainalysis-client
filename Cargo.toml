@@ -1,0 +1,15 @@
+[package]
+name = "chainalysis_client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+json_api_client = { git = "https://github.com/kycdao/json-api-client.git" }
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "1.0"
+
+[dev-dependencies]
+env_logger = "0.10"
+test-log = "0.2"
+tokio = { version = "1.25", features = ["macros"] }
